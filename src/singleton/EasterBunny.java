@@ -20,6 +20,7 @@ public class EasterBunny {
 
     public void acquireMagicBag(EggFactory magicBag) {
         this.magicBag = magicBag;
+        System.out.println("The Easter Bunny has acquired a magic bag. Be concerned!\n");
     }
 
     public Egg useMagicBagToCreateEgg(String eggType) {

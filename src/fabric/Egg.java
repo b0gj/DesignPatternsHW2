@@ -25,5 +25,7 @@ public abstract class Egg {
     public void addDecoration(String decoration){
         if (this.decorations == null)
             this.decorations = new ArrayList<>();
+
+        this.decorations.add(decoration);
     }
 }

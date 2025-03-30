@@ -1,5 +1,7 @@
 package fabric;
 
+import utility.Constants;
+
 public class MagicBag extends EggFactory{
     @Override
     public Egg createEgg(String eggType) {
@@ -12,7 +14,7 @@ public class MagicBag extends EggFactory{
         };
 
         if (egg == null){
-            System.out.println("The Magic Bag isn't capable of making '" + eggType + "' eggs, please try with chicken, ostrich or dinosaur eggs");
+            System.out.println("The Magic Bag isn't capable of making '" + eggType + "' eggs, please try with chicken, ostrich or dinosaur eggs\n");
             return null;
         }
 
