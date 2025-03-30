@@ -2,6 +2,7 @@ package singleton;
 
 import fabric.Egg;
 import fabric.EggFactory;
+import strategy.HidingStrategy;
 
 public class EasterBunny {
     private static EasterBunny instance;
@@ -25,6 +26,10 @@ public class EasterBunny {
 
     public Egg useMagicBagToCreateEgg(String eggType) {
         return this.magicBag.createEgg(eggType);
+    }
+
+    public void hide(Egg egg, HidingStrategy hidingStrategy) {
+        hidingStrategy.hide(egg);
     }
 
 }

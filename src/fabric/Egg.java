@@ -7,6 +7,7 @@ public abstract class Egg {
 
     private String type;
     protected List<String> decorations;
+    private String hidingSpot;
 
     public abstract void create();
 
@@ -27,5 +28,13 @@ public abstract class Egg {
             this.decorations = new ArrayList<>();
 
         this.decorations.add(decoration);
+    }
+
+    public String getHidingSpot() {
+        return hidingSpot;
+    }
+
+    public void setHidingSpot(String hidingSpot) {
+        this.hidingSpot = hidingSpot;
     }
 }

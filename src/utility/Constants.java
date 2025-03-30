@@ -9,4 +9,11 @@ public class Constants {
         public static final String DINO = "dinosaur";
     }
 
+
+    public static class HidingSpots{
+        public static final String BASKET = "basket";
+        public static final String FOREST = "forest";
+        public static final String BUSH = "bush";
+    }
+
 }

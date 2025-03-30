@@ -9,6 +9,8 @@ public abstract class EggDecorator extends Egg {
     public EggDecorator(Egg egg) {
         this.decoratedEgg = egg;
         this.setType(decoratedEgg.getType());
+        this.decorations = decoratedEgg.getDecorations();
+        this.setHidingSpot(decoratedEgg.getHidingSpot());
     }
 
     @Override
