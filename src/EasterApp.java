@@ -11,9 +11,11 @@ public class EasterApp {
 
         EggFactory magicBag = new MagicBag();
 
-        Egg firstChickenEgg = magicBag.createEgg(Constants.EggTypes.CHICKEN);
-        Egg firstOstrichEgg = magicBag.createEgg(Constants.EggTypes.OSTRICH);
-        Egg firstDinoEgg = magicBag.createEgg(Constants.EggTypes.DINO);
+        easterBunny.acquireMagicBag(magicBag);
+
+        Egg firstChickenEgg = easterBunny.useMagicBagToCreateEgg(Constants.EggTypes.CHICKEN);
+        Egg firstOstrichEgg = easterBunny.useMagicBagToCreateEgg(Constants.EggTypes.OSTRICH);
+        Egg firstDinoEgg = easterBunny.useMagicBagToCreateEgg(Constants.EggTypes.DINO);
 
     }
 }
