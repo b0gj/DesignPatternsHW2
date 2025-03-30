@@ -20,6 +20,7 @@ public class ColoredEgg extends EggDecorator{
 
     private void addColor() {
         decoratedEgg.addDecoration("Color: " + color);
+        this.decorations = decoratedEgg.getDecorations();
         System.out.println("The " + decoratedEgg.getType() + " egg has been painted with the color " + this.color);
         System.out.println();
     }

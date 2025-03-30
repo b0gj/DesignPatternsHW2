@@ -20,6 +20,7 @@ public class StickeredEgg extends EggDecorator{
 
     private void addSticker() {
         decoratedEgg.addDecoration("Sticker: " + sticker);
+        this.decorations = decoratedEgg.getDecorations();
         System.out.println("The " + decoratedEgg.getType() + " egg has a new sticker on it: " + this.sticker);
         System.out.println();
     }
