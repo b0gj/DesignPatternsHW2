@@ -1,5 +1,6 @@
 package fabric;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Egg {
@@ -19,5 +20,10 @@ public abstract class Egg {
 
     public List<String> getDecorations() {
         return decorations;
+    }
+
+    public void addDecoration(String decoration){
+        if (this.decorations == null)
+            this.decorations = new ArrayList<>();
     }
 }
